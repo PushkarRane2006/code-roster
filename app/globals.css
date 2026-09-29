@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --cream: #F8F4EC;
+    --lavender: #EFF2FB;
+    --pale-yellow: #F7E3A8;
+    --ink: #141414;
+    --mustard: #EDB13E;
+    --google-blue: #4C80F0;
+    --google-red: #D9503F;
+    --google-green: #4FA35A;
+    --google-yellow: #EDB13E;
+    --editor-bg: #171717;
+    --editor-ink: #F7F3EA;
+  }
+
+  body {
+    background-color: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+}
+
+/* Neo-Brutalist Utility Classes */
+.neo-border {
+  border: 2px solid #141414;
+}
+
+.neo-border-thick {
+  border: 3px solid #141414;
+}
+
+.neo-shadow {
+  box-shadow: 4px 4px 0px #141414;
+}
+
+.neo-shadow-sm {
+  box-shadow: 2px 2px 0px #141414;
+}
+
+.neo-shadow-lg {
+  box-shadow: 6px 6px 0px #141414;
+}
+
+.neo-button {
+  border: 2px solid #141414;
+  box-shadow: 4px 4px 0px #141414;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.neo-button:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #141414;
+}
+
+.neo-button:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #141414;
+}
+
+.neo-pill {
+  border-radius: 9999px;
+}
+
+/* Background Drafting / Dot Grid Pattern */
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(20, 20, 20, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F4EC;
+  border-left: 1px solid #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141414;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EDB13E;
+}
