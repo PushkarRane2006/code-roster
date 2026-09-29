@@ -9,10 +9,9 @@ export const APP = {
 } as const;
 
 export const AI = {
-  // Use gemini-2.5-flash for lightning-fast, structured Hinglish code roasting
-  model: "gemini-2.5-flash",
-  fallbackModel: "gemini-1.5-flash",
-  modelLabel: "Gemini 2.5 Flash",
+  model: "gemini-3.5-flash-lite",
+  fallbackModel: "gemini-flash-latest",
+  modelLabel: "Gemini 3.5 Flash-Lite",
   maxAttempts: 3,
 } as const;
 
